@@ -1,0 +1,36 @@
+.main-div {
+    padding-left: 400px;
+    width: auto;
+    height: auto;
+    background-color: #88b7c3;
+    text-align: center ;
+    align-content: center;
+}
+td {
+    padding: 5px 10px;
+}
+.image-container {
+    width: 300px;
+    height: 200px;
+    max-width: 300px;
+    max-height: 200px;
+    text-align: center;
+    background-image: url("images/default.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 100px;
+}
+.table {
+    border: 1px red solid;
+    text-align: center;
+    align-self: center;
+    background-color: #a47878;
+
+}
+.table-head {
+    justify-content: center;
+}
+.empty-cell {
+    width: 100px;
+}

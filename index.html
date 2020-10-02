@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <title>Routine Mood</title>
+</head>
+<body onload="setInterval(updateTime, 1000)">
+<div class="main-div">
+    <table class="table">
+        <thead class="table-head">
+        <tr>
+            <td colspan="4">
+                <h1 class="main-clock" id="time">Wait for a second...</h1>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr aria-rowspan="4" >
+            <td colspan="4" style="text-align: center">
+                <div class="image-container" id="image"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><h3>Activity</h3></td>
+            <td><h3>Start</h3></td>
+            <td><h3>End</h3></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h3>Wakeup</h3></td>
+            <td><label>
+                <input id="wake-start" type="time" onchange="getTime('wake-start')">
+            </label></td>
+            <td><label>
+                <input id="wake-end" type="time" onchange="getTime('wake-end')">
+            </label></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h3>Lunch</h3></td>
+            <td><label>
+                <input id="lunch-start" type="time" onchange="getTime('lunch-start')">
+            </label></td>
+            <td><label>
+                <input id="lunch-end" type="time" onchange="getTime('lunch-end')">
+            </label></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h3>Sleep</h3></td>
+            <td><label>
+                <input id="sleep-start" type="time" onchange="getTime('sleep-start')">
+            </label></td>
+            <td><label>
+                <input id="sleep-end" type="time" onchange="getTime('sleep-end')">
+            </label></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="empty-cell"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+<script lang="javascript" src="index.js"></script>
+</html>
